@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #304D63;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: #fff;
+}
+
+header{
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.search{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search input{
+  width: 35%;
+  padding: 3px;
+  border: 1px solid #304D63;
+}
+
+.box{
+  margin-bottom: 35px;
+}
+
+.search{
+  margin-bottom: 35px;
+}
+
+.search button{
+  padding: 5px 18px;
+  background-color: #304D63;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+}
+
+.box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box table{
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.box table tr th{
+  padding: 10px;
+}
+
+.box table td{
+  padding: 7px;
+}
+
+.box table, .box td, .box th{
+  border: 1px solid #d8d8d6;
+}
+
+.delete{
+  width: 100%;
+  background-color: darkred;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px 0;
+  border: none;
+}
+
+.delete:hover{
+  background-color: #bf2604;
+}

@@ -41,7 +41,7 @@ interface Cliente extends Pessoa{
         <td>${veiculo.placa}</td>
         <td>${veiculo.entrada}</td>
         <td>
-          <button class="delete" data-placa="${veiculo.placa}">X</button>
+          <button class="delete" data-placa="${veiculo.placa}">Remover</button>
         </td>
       `;
 
@@ -52,7 +52,13 @@ interface Cliente extends Pessoa{
 
       $("#patio")?.appendChild(row);
 
-      if(salva) salvar([...ler(), veiculo]);
+
+      if(salva) {
+      salvar([...ler(), veiculo]);
+      $("#nome").value = '';
+      $("#placa").value = '';
+      $("#nome").focus();
+      }
     }
 
     function remover(placa: string){
